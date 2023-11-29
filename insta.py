@@ -1,3 +1,7 @@
+import os 
+os.system('apk add py-pip')
+os.system('pip install console')
+os.system('pip install requests')
 print("""
 ------------------------------------------
                   welcome 🐉             
