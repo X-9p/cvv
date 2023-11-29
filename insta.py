@@ -2,6 +2,7 @@ import os
 os.system('apk add py-pip')
 os.system('pip install console')
 os.system('pip install requests')
+os.system('clear')
 print("""
 ------------------------------------------
                   welcome 🐉             
@@ -19,7 +20,7 @@ if '1' in bui:
     import console
     import os
 
-    console.clear()
+    os.system('clear')
     def create_file_with_content(filename, lines_count, characters_per_line):
         content = generate_content(lines_count, characters_per_line)
 
@@ -56,7 +57,7 @@ elif bui == '2':
     import console
     import requests
     from concurrent.futures import ThreadPoolExecutor
-    console.clear()
+    os.system('clear')
     token = "6772893835:AAGPxcIF6j0gIEfGABsT_QQyVQMp3or23qg"
     id = "6294996199"
     correct_attempts = 0
@@ -73,13 +74,13 @@ elif bui == '2':
         rrx4j = requests.post("https://www.instagram.com/accounts/web_create_ajax/attempt/", headers={'Host':'www.instagram.com', 'content-length':'70', 'sec-ch-ua':'"Chromium";v="106",', 'x-ig-app-id':'936619743392459', 'x-ig-www-claim':'hmac.AR3-jjxWxD7osd7WtAM_c6iLQHDvlDZucbWWVQ38t2tPdF3t', 'sec-ch-ua-mobile':'?0', 'x-instagram-ajax':'de83d85cf90c', 'user-agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36', 'viewport-width':'980', 'content-type':'application/x-www-form-urlencoded', 'accept':'*/*', 'x-requested-with':'XMLHttpRequest', 'x-asbd-id':'198387', 'x-csrftoken':'NEhRd2uaYf6774IYrUuw6svzofnU3COW', 'sec-ch-prefers-color-scheme':'dark', 'sec-ch-ua-platform':'"Linux"', 'origin':'https://www.instagram.com', 'sec-fetch-site':'same-origin', 'sec-fetch-mode':'cors', 'sec-fetch-dest':'empty', 'referer':'https://www.instagram.com/accounts/emailsignup/', 'accept-language':'ar-IQ,ar;q=0.9,en-UM;q=0.8,en;q=0.7,ar-AE;q=0.6,en-US;q=0.5'}, data={"email":"email=x4j@gmail.com+", "username":username, "first_name":"x4j", "opt_into_one_tap":"false"}).text
 
         if "username_is_taken" in rrx4j:
-            console.clear()
+            os.system('clear')
             incorrect_attempts += 1
             print(f'Correct attempts: {correct_attempts}')
             print(f'Incorrect attempts: {incorrect_attempts}')
             print(f'the user : {user_input}')
         else:
-            console.clear()
+            os.system('clear')
             correct_attempts += 1
 
             print(f'Correct attempts: {correct_attempts}')
