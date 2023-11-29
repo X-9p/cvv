@@ -1,7 +1,5 @@
 import os 
 os.system('apk add py-pip')
-os.system('pip install console')
-os.system('pip install requests')
 os.system('clear')
 print("""
 ------------------------------------------
@@ -17,7 +15,7 @@ bui = input("choose  :")
 if '1' in bui:
     import random
     import string
-    import console
+    
     import os
 
     os.system('clear')
@@ -54,7 +52,7 @@ if '1' in bui:
         print("An error occurred while creating the file.")
 elif bui == '2':
     import os
-    import console
+    
     import requests
     from concurrent.futures import ThreadPoolExecutor
     os.system('clear')
